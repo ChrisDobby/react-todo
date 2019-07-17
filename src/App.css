@@ -1,0 +1,93 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container .list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.app-container .list i {
+    margin-right: 10px;
+}
+
+.app-container .list .item {
+    display: flex;
+    align-items: center;
+}
+
+.app-container .list .item .item-title {
+    flex-grow: 1;
+}
+
+.app-container .list .item .item-title.complete-item {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.checkbox-field {
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-field input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-field .checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid #9d9d9d;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.checkbox-field .checkmark.disabled {
+    cursor: default;
+    background-color: transparent;
+}
+
+.checkbox-field .checkmark:after {
+    content: '';
+    display: none;
+}
+
+.checkbox-field input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-field .checkmark:after {
+    position: relative;
+    left: 6px;
+    top: 1px;
+    width: 6px;
+    height: 13px;
+    border: solid #9d9d9d;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox-field .label-text {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.add-item-form {
+    padding: 20px;
+}
