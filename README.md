@@ -1,4 +1,4 @@
-Code for the Pluralsight guides [](https://www.pluralsight.com/guides/react-todo-list-part-1/) and [](https://www.pluralsight.com/guides/react-todo-list-part-2/).
+Code for the Pluralsight guides [React Todo List Part 1](https://www.pluralsight.com/guides/react-todo-list-part-1/) and [React Todo List Part 2](https://www.pluralsight.com/guides/react-todo-list-part-2/).
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
